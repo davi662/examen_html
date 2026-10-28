@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | EcoMarket</title>
+    <link rel="icon" type="image/png" href="../img/icons/imagen-todo-removebg-preview.png">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">EcoMarket</div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html" class="active">Productos</a></li>
+                <li><a href="sobre-nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-catalogo">
+        <input type="radio" name="filtro-precio" id="precio-todos" class="filtro-oculto" checked>
+        <input type="radio" name="filtro-precio" id="precio-bajo" class="filtro-oculto">
+        <input type="radio" name="filtro-precio" id="precio-medio" class="filtro-oculto">
+        <input type="radio" name="filtro-precio" id="precio-alto" class="filtro-oculto">
+        
+        <input type="radio" name="filtro-cat" id="cat-todos" class="filtro-oculto" checked>
+        <input type="radio" name="filtro-cat" id="cat-hogar" class="filtro-oculto">
+        <input type="radio" name="filtro-cat" id="cat-cuidado" class="filtro-oculto">
+        <input type="radio" name="filtro-cat" id="cat-alimento" class="filtro-oculto">
+        <input type="radio" name="filtro-cat" id="cat-moda" class="filtro-oculto">
+        
+        <input type="radio" name="paginacion" id="pag-1" class="filtro-oculto" checked>
+        <input type="radio" name="paginacion" id="pag-2" class="filtro-oculto">
+        <input type="radio" name="paginacion" id="pag-3" class="filtro-oculto">
+
+        <div id="producto-1" class="modal-producto"><div class="modal-contenido"><a href="#" class="btn-cerrar">&times;</a><h2>Termo de Acero</h2><img src="../img/products/termo de acero.webp" alt="termo de acero" class="img-producto"><p>Conserva temperatura por 24 horas.</p><p class="precio-modal">$25.00</p><a href="#" class="btn-secundario">Añadir al carrito</a></div></div>
+        <div id="producto-2" class="modal-producto"><div class="modal-contenido"><a href="#" class="btn-cerrar">&times;</a><h2>Envoltorios de Cera</h2><img src="../img/products/envoltorio-cera.webp" alt="envoltorio-cera" class="img-producto"><p>Sustituto ecológico al film plástico.</p><p class="precio-modal">$15.00</p><a href="#" class="btn-secundario">Añadir al carrito</a></div></div>
+        <div id="producto-3" class="modal-producto"><div class="modal-contenido"><a href="#" class="btn-cerrar">&times;</a><h2>Cubiertos de Bambú</h2><img src="../img/products/cubiertos-bambu.jpg" alt="cubiertos-bambu" class="img-producto"><p>Set portátil 100% biodegradable.</p><p class="precio-modal">$12.00</p><a href="#" class="btn-secundario">Añadir al carrito</a></div></div>
+        <div id="producto-4" class="modal-producto"><div class="modal-contenido"><a href="#" class="btn-cerrar">&times;</a><h2>Esponja Luffa</h2><img src="../img/products/esponja lufa.webp" alt="esponja" class="img-producto"><p>Fibra natural compostable.</p><p class="precio-modal">$4.00</p><a href="#" class="btn-secundario">Añadir al carrito</a></div></div>
+        <div id="producto-5" class="modal-producto"><div class="modal-contenido"><a href="#" class="btn-cerrar">&times;</a><h2>Filtro Reutilizable</h2><img src="../img/products/filtro-reutilizable.webp" alt="filtro-reutilizable" class="img-producto"><p>Filtro de tela para café, lavable.</p><p class="precio-modal">$8.00</p><a href="#" class="btn-secundario">Añadir al carrito</a></div></div>
+
+        <div id="producto-6" class="modal-producto"><div class="modal-contenido"><a href="#" class="btn-cerrar">&times;</a><h2>Camiseta Orgánica</h2><img src="../img/products/camiseta-organixa.jpg" alt="camiseta-organixa" class="img-producto"><p>Algodón 100% orgánico certificado.</p><p class="precio-modal">$30.00</p><a href="#" class="btn-secundario">Añadir al carrito</a></div></div>
+        <div id="producto-7" class="modal-producto"><div class="modal-contenido"><a href="#" class="btn-cerrar">&times;</a><h2>Bolsa Tote Tela</h2><img src="../img/products/bolsa-tote-tela.webp" alt="bolsa-tote-tela" class="img-producto"><p>Resistente y lavable para tus compras.</p><p class="precio-modal">$10.00</p><a href="#" class="btn-secundario">Añadir al carrito</a></div></div>
+        <div id="producto-8" class="modal-producto"><div class="modal-contenido"><a href="#" class="btn-cerrar">&times;</a><h2>Calcetines Bambú</h2><img src="../img/products/calcetines-bambu.jpg" alt="calcetines-bambu" class="img-producto"><p>Transpirables y antibacterianos.</p><p class="precio-modal">$8.00</p><a href="#" class="btn-secundario">Añadir al carrito</a></div></div>
+        <div id="producto-9" class="modal-producto"><div class="modal-contenido"><a href="#" class="btn-cerrar">&times;</a><h2>Gafas de Madera</h2><img src="../img/products/gafas-madera.jpg" alt="gafas-madera" class="img-producto"><p>Armazón tallado en madera sostenible.</p><p class="precio-modal">$45.00</p><a href="#" class="btn-secundario">Añadir al carrito</a></div></div>
+        <div id="producto-10" class="modal-producto"><div class="modal-contenido"><a href="#" class="btn-cerrar">&times;</a><h2>Mochila Reciclada</h2><img src="../img/products/mochila-reciclada.jpg" alt="mochila-reciclada" class="img-producto"><p>Hecha a partir de carton reciclado.</p><p class="precio-modal">$55.00</p><a href="#" class="btn-secundario">Añadir al carrito</a></div></div>
+
+        <div id="producto-11" class="modal-producto"><div class="modal-contenido"><a href="#" class="btn-cerrar">&times;</a><h2>Cepillo de Bambú</h2><img src="../img/products/cepillo-bambu.jpg" alt="cepillo-bambu" class="img-producto"><p>Libre de plásticos y BPA.</p><p class="precio-modal">$5.00</p><a href="#" class="btn-secundario">Añadir al carrito</a></div></div>
+        <div id="producto-12" class="modal-producto"><div class="modal-contenido"><a href="#" class="btn-cerrar">&times;</a><h2>Shampoo Sólido</h2><img src="../img/products/shampo-solido.webp" alt="" class="img-producto"><p>Rinde hasta 60 lavadas.</p><p class="precio-modal">$12.00</p><a href="#" class="btn-secundario">Añadir al carrito</a></div></div>
+        <div id="producto-13" class="modal-producto"><div class="modal-contenido"><a href="#" class="btn-cerrar">&times;</a><h2>Jabón de Avena</h2><img src="../img/products/jabon-artesanal.jpg" alt="jabon-artesanal" class="img-producto"><p>Hecho a mano con ingredientes naturales.</p><p class="precio-modal">$6.00</p><a href="#" class="btn-secundario">Añadir al carrito</a></div></div>
+        <div id="producto-14" class="modal-producto"><div class="modal-contenido"><a href="#" class="btn-cerrar">&times;</a><h2>Desodorante Natural</h2><img src="../img/products/desodorante-natural.webp" alt="desodorante-natural" class="img-producto"><p>Sin aluminio ni parabenos.</p><p class="precio-modal">$10.00</p><a href="#" class="btn-secundario">Añadir al carrito</a></div></div>
+        <div id="producto-15" class="modal-producto"><div class="modal-contenido"><a href="#" class="btn-cerrar">&times;</a><h2>Copitos de Bambú</h2><img src="../img/products/copos-bambu.jpg" alt="" class="img-producto"><p>Con algodón orgánico, compostables.</p><p class="precio-modal">$4.00</p><a href="#" class="btn-secundario">Añadir al carrito</a></div></div>
+
+        <div id="producto-16" class="modal-producto"><div class="modal-contenido"><a href="#" class="btn-cerrar">&times;</a><h2>Café Orgánico</h2><img src="../img/products/cafe-organico.webp" alt="" class="img-producto"><p>Cultivado bajo sombra, comercio justo.</p><p class="precio-modal">$14.00</p><a href="#" class="btn-secundario">Añadir al carrito</a></div></div>
+        <div id="producto-17" class="modal-producto"><div class="modal-contenido"><a href="#" class="btn-cerrar">&times;</a><h2>Té Verde Matcha</h2><img src="../img/products/matcha.jpg" alt="te Verde" class="img-producto"><p>Polvo puro y antioxidante.</p><p class="precio-modal">$18.00</p><a href="#" class="btn-secundario">Añadir al carrito</a></div></div>
+        <div id="producto-18" class="modal-producto"><div class="modal-contenido"><a href="#" class="btn-cerrar">&times;</a><h2>Miel Artesanal</h2><img src="../img/products/miel.webp" alt="miel" class="img-producto"><p>Directo de apicultores locales.</p><p class="precio-modal">$9.00</p><a href="#" class="btn-secundario">Añadir al carrito</a></div></div>
+        <div id="producto-19" class="modal-producto"><div class="modal-contenido"><a href="#" class="btn-cerrar">&times;</a><h2>Chocolate Vegano</h2><img src="../img/products/chocolate-vegano.webp" alt="chocolate-vegano" class="img-producto"><p>Cacao al 70%, sin lácteos.</p><p class="precio-modal">$5.00</p><a href="#" class="btn-secundario">Añadir al carrito</a></div></div>
+        <div id="producto-20" class="modal-producto"><div class="modal-contenido"><a href="#" class="btn-cerrar">&times;</a><h2>Granola Casera</h2><img src="../img/products/granola.jpg" alt="granola-jh" class="img-producto"><p>Horneada con endulzantes naturales.</p><p class="precio-modal">$7.00</p><a href="#" class="btn-secundario">Añadir al carrito</a></div></div>
+
+        <aside class="sidebar-filtros">
+            <div class="buscador">
+                <input type="search" placeholder="buscar " class="input-busqueda" >
+            </div>
+            
+            <div class="grupo-filtro">
+                <h3>Categorías</h3>
+                <ul class="lista-filtros">
+                    <!-- Los 'for' se conectan como control remoto a los 'id' de los radios ocultos -->
+                    <li><label for="cat-todos" class="label-filtro">Todas</label></li>
+                    <li><label for="cat-hogar" class="label-filtro">Hogar</label></li>
+                    <li><label for="cat-cuidado" class="label-filtro">Cuidado Personal</label></li>
+                    <li><label for="cat-moda" class="label-filtro">Moda</label></li>
+                    <li><label for="cat-alimento" class="label-filtro">Alimentos</label></li>
+                </ul>
+            </div>
+
+            <div class="grupo-filtro">
+                <h3>Precio</h3>
+                <ul class="lista-filtros">
+                    <li><label for="precio-todos" class="label-filtro">Todos los precios</label></li>
+                    <li><label for="precio-bajo" class="label-filtro">Menos de $10</label></li>
+                    <li><label for="precio-medio" class="label-filtro">$10 - $30</label></li>
+                    <li><label for="precio-alto" class="label-filtro">Más de $30</label></li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="seccion-productos">
+           <div class="grid-catalogo">
+    
+    <article class="card-producto cat-hogar pag-1 precio-medio">
+        <div class="etiqueta-stock stock-disponible">En Stock</div>
+        <img src="../img/products/termo de acero.webp" alt="termo de acero" class="img-producto">
+        <div class="info-producto">     
+            <h3>Termo de Acero</h3>
+            <p class="precio">$25.00</p>
+            <div class="acciones-producto">
+                <a href="#producto-1" class="btn-secundario">Ver más</a>
+                <a href="#" class="btn-favorito">&#10084;</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="card-producto cat-hogar pag-1 precio-medio">
+        <div class="etiqueta-stock stock-agotado">Agotado</div>
+        <img src="../img/products/envoltorio-cera.webp" alt="envoltorio-cera" class="img-producto">
+        <div class="info-producto">
+            <h3>Envoltorios de Cera</h3>
+            <p class="precio">$15.00</p>
+            <div class="acciones-producto">
+                <a href="#producto-2" class="btn-secundario">Ver más</a>
+                <a href="#" class="btn-favorito">&#10084;</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="card-producto cat-hogar pag-1 precio-medio">
+        <div class="etiqueta-stock stock-disponible">En Stock</div>
+        <img src="../img/products/cubiertos-bambu.jpg" alt="cubiertos-bambu" class="img-producto">
+        <div class="info-producto">
+            <h3>Cubiertos de Bambú</h3>
+            <p class="precio">$12.00</p>
+            <div class="acciones-producto">
+                <a href="#producto-3" class="btn-secundario">Ver más</a>
+                <a href="#" class="btn-favorito">&#10084;</a>
+            </div>
+        </div>
+    </article>
+    
+    <article class="card-producto cat-hogar pag-1 precio-bajo">
+        <div class="etiqueta-stock stock-disponible">En Stock</div>
+        <img src="../img/products/esponja lufa.webp" alt="esponja" class="img-producto">
+        <div class="info-producto">
+            <h3>Esponja Luffa</h3>
+            <p class="precio">$4.00</p>
+            <div class="acciones-producto">
+                <a href="#producto-4" class="btn-secundario">Ver más</a>
+                <a href="#" class="btn-favorito">&#10084;</a>
+            </div>
+        </div>
+    </article>
+    <article class="card-producto cat-hogar pag-1 precio-bajo">
+        <div class="etiqueta-stock stock-disponible">En Stock</div>
+        <img src="../img/products/filtro-reutilizable.webp" alt="filtro-reutilizable" class="img-producto">
+        <div class="info-producto">
+            <h3>Filtro Reutilizable</h3>
+            <p class="precio">$8.00</p>
+            <div class="acciones-producto">
+                <a href="#producto-5" class="btn-secundario">Ver más</a>
+                <a href="#" class="btn-favorito">&#10084;</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="card-producto cat-moda pag-1 precio-medio">
+        <div class="etiqueta-stock stock-disponible">En Stock</div>
+        <img src="../img/products/camiseta-organixa.jpg" alt="camiseta-organixa" class="img-producto">
+        <div class="info-producto">
+            <h3>Camiseta Orgánica</h3>
+            <p class="precio">$30.00</p>
+            <div class="acciones-producto">
+                <a href="#producto-6" class="btn-secundario">Ver más</a>
+                <a href="#" class="btn-favorito">&#10084;</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="card-producto cat-moda pag-1 precio-medio">
+        <div class="etiqueta-stock stock-disponible">En Stock</div>
+        <img src="../img/products/bolsa-tote-tela.webp" alt="bolsa-tote-tela" class="img-producto">
+        <div class="info-producto">
+            <h3>Bolsa Tote Tela</h3>
+            <p class="precio">$10.00</p>
+            <div class="acciones-producto">
+                <a href="#producto-7" class="btn-secundario">Ver más</a>
+                <a href="#" class="btn-favorito">&#10084;</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="card-producto cat-moda pag-1 precio-bajo">
+        <div class="etiqueta-stock stock-agotado">Agotado</div>
+        <img src="../img/products/calcetines-bambu.jpg" alt="calcetines-bambu" class="img-producto">
+        <div class="info-producto">
+            <h3>Calcetines Bambú</h3>
+            <p class="precio">$8.00</p>
+            <div class="acciones-producto">
+                <a href="#producto-8" class="btn-secundario">Ver más</a>
+                <a href="#" class="btn-favorito">&#10084;</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="card-producto cat-moda pag-2 precio-alto">
+        <div class="etiqueta-stock stock-disponible">En Stock</div>
+        <img src="../img/products/gafas-madera.jpg" alt="gafas-madera" class="img-producto">
+        <div class="info-producto">
+            <h3>Gafas de Madera</h3>
+            <p class="precio">$45.00</p>
+            <div class="acciones-producto">
+                <a href="#producto-9" class="btn-secundario">Ver más</a>
+                <a href="#" class="btn-favorito">&#10084;</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="card-producto cat-moda pag-2 precio-alto">
+        <div class="etiqueta-stock stock-disponible">En Stock</div>
+        <img src="../img/products/mochila-reciclada.jpg" alt="mochila-reciclada" class="img-producto">
+        <div class="info-producto">
+            <h3>Mochila Reciclada</h3>
+            <p class="precio">$55.00</p>
+            <div class="acciones-producto">
+                <a href="#producto-10" class="btn-secundario">Ver más</a>
+                <a href="#" class="btn-favorito">&#10084;</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="card-producto cat-cuidado pag-2 precio-bajo">
+        <div class="etiqueta-stock stock-disponible">En Stock</div>
+        <img src="../img/products/cepillo-bambu.jpg" alt="cepillo-bambu" class="img-producto">
+        <div class="info-producto">
+            <h3>Cepillo de Bambú</h3>
+            <p class="precio">$5.00</p>
+            <div class="acciones-producto">
+                <a href="#producto-11" class="btn-secundario">Ver más</a>
+                <a href="#" class="btn-favorito">&#10084;</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="card-producto cat-cuidado pag-2 precio-medio">
+        <div class="etiqueta-stock stock-disponible">En Stock</div>
+        <img src="../img/products/shampo-solido.webp" alt="" class="img-producto">
+        <div class="info-producto">
+            <h3>Shampoo Sólido</h3>
+            <p class="precio">$12.00</p>
+            <div class="acciones-producto">
+                <a href="#producto-12" class="btn-secundario">Ver más</a>
+                <a href="#" class="btn-favorito">&#10084;</a>
+            </div>
+        </div>
+    </article>
+    <article class="card-producto cat-cuidado pag-2 precio-bajo">
+        <div class="etiqueta-stock stock-disponible">En Stock</div>
+        <img src="../img/products/jabon-artesanal.jpg" alt="jabon-artesanal" class="img-producto">
+        <div class="info-producto">
+            <h3>Jabón de Artesanal</h3>
+            <p class="precio">$6.00</p>
+            <div class="acciones-producto">
+                <a href="#producto-13" class="btn-secundario">Ver más</a>
+                <a href="#" class="btn-favorito">&#10084;</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="card-producto cat-cuidado pag-2 precio-medio">
+        <div class="etiqueta-stock stock-agotado">Agotado</div>
+        <img src="../img/products/desodorante-natural.webp" alt="desodorante-natural" class="img-producto">
+        <div class="info-producto">
+            <h3>Desodorante Natural</h3>
+            <p class="precio">$10.00</p>
+            <div class="acciones-producto">
+                <a href="#producto-14" class="btn-secundario">Ver más</a>
+                <a href="#" class="btn-favorito">&#10084;</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="card-producto cat-cuidado pag-2 precio-bajo">
+        <div class="etiqueta-stock stock-disponible">En Stock</div>
+        <img src="../img/products/copos-bambu.jpg" alt="" class="img-producto">
+        <div class="info-producto">
+            <h3>Copitos de Bambú</h3>
+            <p class="precio">$4.00</p>
+            <div class="acciones-producto">
+                <a href="#producto-15" class="btn-secundario">Ver más</a>
+                <a href="#" class="btn-favorito">&#10084;</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="card-producto cat-alimento pag-2 precio-medio">
+        <div class="etiqueta-stock stock-disponible">En Stock</div>
+        <img src="../img/products/cafe-organico.webp" alt="" class="img-producto">
+        <div class="info-producto">
+            <h3>Café Orgánico</h3>
+            <p class="precio">$14.00</p>
+            <div class="acciones-producto">
+                <a href="#producto-16" class="btn-secundario">Ver más</a>
+                <a href="#" class="btn-favorito">&#10084;</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="card-producto cat-alimento pag-3 precio-medio">
+        <div class="etiqueta-stock stock-disponible">En Stock</div>
+        <img src="../img/products/matcha.jpg" alt="te Verde" class="img-producto">
+        <div class="info-producto">
+            <h3>Té Verde Matcha</h3>
+            <p class="precio">$18.00</p>
+            <div class="acciones-producto">
+                <a href="#producto-17" class="btn-secundario">Ver más</a>
+                <a href="#" class="btn-favorito">&#10084;</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="card-producto cat-alimento pag-3 precio-bajo">
+        <div class="etiqueta-stock stock-agotado">Agotado</div>
+        <img src="../img/products/miel.webp" alt="miel" class="img-producto">
+        <div class="info-producto">
+            <h3>Miel Artesanal</h3>
+            <p class="precio">$9.00</p>
+            <div class="acciones-producto">
+                <a href="#producto-18" class="btn-secundario">Ver más</a>
+                <a href="#" class="btn-favorito">&#10084;</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="card-producto cat-alimento pag-3 precio-bajo">
+        <div class="etiqueta-stock stock-disponible">En Stock</div>
+        <img src="../img/products/chocolate-vegano.webp" alt="chocolate-vegano" class="img-producto">
+        <div class="info-producto">
+            <h3>Chocolate Vegano</h3>
+            <p class="precio">$5.00</p>
+            <div class="acciones-producto">
+                <a href="#producto-19" class="btn-secundario">Ver más</a>
+                <a href="#" class="btn-favorito">&#10084;</a>
+            </div>
+        </div>
+    </article>
+
+    <article class="card-producto cat-alimento pag-3 precio-bajo">
+        <div class="etiqueta-stock stock-disponible">En Stock</div>
+        <img src="../img/products/granola.jpg" alt="granola-jh" class="img-producto">
+        <div class="info-producto">
+            <h3>Granola Casera</h3>
+            <p class="precio">$7.00</p>
+            <div class="acciones-producto">
+                <a href="#producto-20" class="btn-secundario">Ver más</a>
+                <a href="#" class="btn-favorito">&#10084;</a>
+            </div>
+        </div>
+    </article>
+
+</div>
+            <div class="paginacion">
+                <label for="pag-1" class="btn-pagina">&laquo; Inicio</label>
+                <label for="pag-1" class="btn-pagina">1</label>
+                <label for="pag-2" class="btn-pagina">2</label>
+                <label for="pag-3" class="btn-pagina">3</label>
+                <label for="pag-3" class="btn-pagina">Fin &raquo;</label>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <a href="#" class="btn-flotante-carrito">
+        🛒
+        <span class="badge-carrito"></span>
+    </a>
+    <footer class="footer">
+        <p>&copy; 2026 EcoMarket. Compra responsable, vive sostenible.</p>
+    </footer>
+</body>
+</html>

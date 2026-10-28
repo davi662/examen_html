@@ -1,0 +1,18 @@
+.icono-red {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.icono-red:hover {
+    transform: scale(1.15); 
+    background-color: var(--color-primario);
+}
+
+
+.card-producto { 
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); 
+}
+
+.card-producto:hover { 
+    transform: translateY(-8px); 
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1); 
+}

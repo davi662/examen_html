@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | EcoMarket</title>
+    <link rel="icon" type="image/png" href="../img/icons/imagen-todo-removebg-preview.png">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">EcoMarket</div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="sobre-nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-contacto">
+        <section class="seccion-formulario">
+            <h2>¿Tienes alguna duda o sugerencia?</h2>
+            <p>¡Déjanoslo saber! Ingresa tus datos y te contactaremos pronto.</p>
+            
+            <form action="#" class="formulario-contacto">
+                <div class="grupo-input">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" class="input-form" placeholder="Ej. Juan Pérez" required>
+                </div>
+                
+                <div class="grupo-input">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" class="input-form" placeholder="ejemplo@correo.com" required>
+                </div>
+                
+                <div class="grupo-input">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" class="input-form" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+                
+                <button type="submit" class="btn-secundario">Enviar Mensaje</button>
+            </form>
+        </section>
+
+        <aside class="info-contacto">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.379030357559!2d-73.11613616996192!3d7.135273933971613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e68156bfce900ab%3A0x35fb881ce002705c!2sEstadio%20Am%C3%A9rico%20Montanini!5e0!3m2!1ses!2sco!4v1792701350303!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            
+            <div class="detalles-contacto">
+                <h3>Información Directa</h3>
+                <p> Calle Sostenible 123, Ciudad Verde</p>
+                <p> +57 300 123 4567</p>
+                <p> hola@ecomarket.com</p>
+            </div>
+
+            <div class="redes-sociales">
+                <h3>Síguenos</h3>
+                <div class="iconos-redes">
+                    <a href="https://www.facebook.com/" class="icono-red" target="_blank">FB</a>
+                    <a href="https://www.instagram.com/" class="icono-red" target="_blank">IG</a>
+                    <a href="https://www.x.com/" class="icono-red" target="_blank">X</a>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 EcoMarket. Compra responsable, vive sostenible.</p>
+    </footer>
+</body>
+</html>
