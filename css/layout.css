@@ -282,3 +282,25 @@
         flex-direction: row;
     }
 }
+
+.promocion{
+    padding:10px;
+    background:green;
+    border-radius: 10px;
+    box-shadow: 4;
+    align-items: center;
+    display: flex;
+}           
+
+.op{
+    color:white
+}
+
+.btn-hola{
+    background-color:white;
+    padding: 6px;
+    border-radius: 10px;
+    color: black;
+}
+
+
